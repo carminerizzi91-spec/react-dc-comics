@@ -1,68 +1,186 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+body{
+  min-height: 100vh;
+  font-family: 'Montserrat', Arial, sans-serif;
+  background-color: #0D0D0D; 
+  color: #FFFFFF;   
+}
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+  color: #FFFFFF;
+  text-decoration: none;
 }
 
-body {
+/* Container*/
+.container {
   margin: 0;
+  max-width: 1200px;
+}
+
+/*Main*/ 
+main{
+  text-align: center;
+  padding: 4rem 1rem;
+  margin: 4rem 0;
+}
+
+/* NAVBAR DC COMICS */
+.dc-header {
+  background-color: white;
+  padding: 20px 0;
+  border-bottom: 3px solid #0282F9;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  align-items: center;
+  justify-content: space-between;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+.dc-logo {
+  width: 70px;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.dc-menu {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.dc-menu li {
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: #333;
+  transition: color 0.2s, border-bottom 0.2s;
+  padding-bottom: 5px;
+}
+
+.dc-menu li:hover {
+  color: #0282F9;
+  border-bottom: 3px solid #0282F9;
+}
+
+/* FOOTER DC COMICS */
+.dc-footer {
+  background-image: url('/src/assets/footer-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: #ffffff;
+  font-family: 'Montserrat', Arial, sans-serif;
+  padding-top: 40px;
+}
+
+/* CONTENITORE CENTRALE */
+.footer-container {
+  width: 80%;
+  max-width: 1200px;   /* evita che diventi troppo largo */
+  margin: 0 auto;
+}
+
+/* SEZIONE SUPERIORE */
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* COLONNE */
+.footer-links {
+  display: flex;
+  gap: 40px;
+}
+
+.footer-links h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.footer-links li {
+  font-size: 14px;
+  color: #bfbfbf;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.footer-links li:hover {
+  color: #ffffff;
+}
+
+/* LOGO A DESTRA */
+.footer-logo {
+  width: 300px;
+  opacity: 0.2;
+}
+
+/* SEZIONE INFERIORE */
+.footer-bottom {
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 40px;
+}
+
+.footer-bottom-inner {
+  width: 80%;
+  max-width: 1200px;   /* anche qui per centrare tutto */
+  margin: 0 auto;
+  padding: 20px 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* BOTTONE */
+.sign-up {
+  background-color: transparent;
+  border: 2px solid #0282F9;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.sign-up:hover {
+  background-color: #0282F9;
+}
+
+/* SOCIAL */
+.social {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.social span {
+  color: #0282F9;
+  font-weight: bold;
+}
+
+.social img {
+  width: 25px;
+  cursor: pointer;
 }
