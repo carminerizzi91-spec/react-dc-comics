@@ -3,11 +3,9 @@
   padding:0;
   box-sizing: border-box;
 }
-
-body{
-  min-height: 100vh;
+body {
   font-family: 'Montserrat', Arial, sans-serif;
-  background-color: #0D0D0D; 
+  background-color: #1c1c1c; 
   color: #FFFFFF;   
 }
 
@@ -30,15 +28,98 @@ a {
 /*Main*/ 
 main{
   text-align: center;
-  padding: 4rem 1rem;
-  margin: 4rem 0;
+
 }
+
+.dc-main {
+  background-color: #1c1c1c;
+}
+
+/* JUMBOTRON */
+.jumbotron {
+  width: 100%;
+  height: 450px;
+  background-image: url('/src/assets/jumbotron.jpg');
+  background-size: cover;
+  background-position: top; 
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* SEZIONE COMICS */
+.comics-section {
+  padding: 40px 0;
+}
+
+.comics-container {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.section-title {
+  background-color: #0282F9;
+  color: white;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 700;
+  position: absolute;
+  top: -60px;
+  left: 0;
+}
+
+/* GRIGLIA */
+.comics-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+}
+
+.comic-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.comic-card h4 {
+  color: white;
+  font-size: 14px;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+/* LOAD MORE */
+.load-more-wrapper {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.load-more {
+  background-color: #0282F9;
+  color: white;
+  border: none;
+  padding: 10px 40px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.load-more:hover {
+  background-color: #006fd0;
+}
+
+
 
 /* NAVBAR DC COMICS */
 .dc-header {
   background-color: white;
   padding: 20px 0;
   border-bottom: 3px solid #0282F9;
+  margin-bottom: 0;
+  padding-bottom: 0;
+
 }
 
 .container {
@@ -47,6 +128,7 @@ main{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
 }
 
 .dc-logo {
@@ -92,7 +174,7 @@ main{
 /* CONTENITORE CENTRALE */
 .footer-container {
   width: 80%;
-  max-width: 1200px;   /* evita che diventi troppo largo */
+  max-width: 1200px;  
   margin: 0 auto;
 }
 
@@ -145,7 +227,7 @@ main{
 
 .footer-bottom-inner {
   width: 80%;
-  max-width: 1200px;   /* anche qui per centrare tutto */
+  max-width: 1200px;   
   margin: 0 auto;
   padding: 20px 0;
 
@@ -184,3 +266,4 @@ main{
   width: 25px;
   cursor: pointer;
 }
+
