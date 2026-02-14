@@ -5,8 +5,15 @@ import youtube from '../assets/footer-youtube.png'
 import pinterest from '../assets/footer-pinterest.png'
 import periscope from '../assets/footer-periscope.png'
 import Bluebar from './Bluebar'
+import FooterList from './FooterList'
 
 export default function Footer() {
+
+  const dcComics = ["Characters", "Comics", "Movies", "TV", "Games", "Videos", "News"]
+  const shop = ["Shop DC", "Shop DC Collectibles"]
+  const dc = ["Terms Of Use", "Privacy Policy", "Ad Choices", "Advertising", "Jobs", "Subscriptions", "Talent Workshops", "CPSC Certificates", "Ratings", "Shop Help", "Contact Us"]
+  const sites = ["DC", "MAD Magazine", "DC Kids", "DC Universe", "DC Power Visa"]
+
   return (
     <>
       {/* BLUE BAR */}
@@ -21,50 +28,28 @@ export default function Footer() {
             {/* COLONNE */}
             <div className="footer-links">
               <div>
-                <h3>DC COMICS</h3>
-                <ul>
-                  <li>Characters</li>
-                  <li>Comics</li>
-                  <li>Movies</li>
-                  <li>TV</li>
-                  <li>Games</li>
-                  <li>Videos</li>
-                  <li>News</li>
-                </ul>
-
-                <h3>SHOP</h3>
-                <ul>
-                  <li>Shop DC</li>
-                  <li>Shop DC Collectibles</li>
-                </ul>
+                <FooterList
+                  title={"DC COMICS"}
+                  items={dcComics}
+                />
+                <FooterList
+                  title={"SHOP"}
+                  items={shop}
+                />
               </div>
 
               <div>
-                <h3>DC</h3>
-                <ul>
-                  <li>Terms Of Use</li>
-                  <li>Privacy Policy</li>
-                  <li>Ad Choices</li>
-                  <li>Advertising</li>
-                  <li>Jobs</li>
-                  <li>Subscriptions</li>
-                  <li>Talent Workshops</li>
-                  <li>CPSC Certificates</li>
-                  <li>Ratings</li>
-                  <li>Shop Help</li>
-                  <li>Contact Us</li>
-                </ul>
+                <FooterList
+                  title={"DC"}
+                  items={dc}
+                />
               </div>
 
               <div>
-                <h3>SITES</h3>
-                <ul>
-                  <li>DC</li>
-                  <li>MAD Magazine</li>
-                  <li>DC Kids</li>
-                  <li>DC Universe</li>
-                  <li>DC Power Visa</li>
-                </ul>
+                <FooterList
+                  title={"SITE"}
+                  items={sites}
+                />
               </div>
             </div>
 
