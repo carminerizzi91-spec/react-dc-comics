@@ -47,7 +47,7 @@ export default function Footer() {
 
               <div>
                 <FooterList
-                  title={"SITE"}
+                  title={"SITES"}
                   items={sites}
                 />
               </div>
